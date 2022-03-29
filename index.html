@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>&nbsp;&nbsp;Nova aba</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script defer="defer" src="js/quote.js"></script>
+        <script defer="defer" src="js/wallpaper.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="hour">
+                <div id="greetings"></div>
+                <div class="secon__weather">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" />
+                    </div>
+                    <div class="temperature-value">   
+                        <p>- °</p>
+                    </div>
+                    <div class="temperature-description">
+                        <p></p>
+                    </div>
+                </div> 
+                <div class='quote-description'>
+                    <p id='random_quote'></p>
+                </div>              
+            </div>               
+        </div>    
+        </div>
+
+        <script defer="defer" src="js/weather.js"></script>
+        <script defer="defer" src="js/greeting.js"></script>
+
+        <script>
+            feather.replace();
+        </script>
+        
+    </body>
+</html>

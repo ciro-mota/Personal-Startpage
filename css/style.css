@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --fsg: 150px;
+  --fsm: 85px;
+  --fss: 30px;
+  --fses: 58px;
+  --fg: #d8dee9;
+  --qbg: #2c323d;
+  --accent: #1a318b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--fg);
+  font-size: 13.5px;
+  transition: 0.2s ease-in-out;
+}
+
+html {
+    height: 100%;
+    background-position-x: center;
+    background-size: cover;
+}  
+
+body {
+    background: rgba(31, 34, 41, 0.664);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container {
+  width: 150vh;
+  height: 85vh;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 20px; 
+}
+
+.secon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secon__weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#greetings {
+  font-size: var(--fses);
+  font-weight: bolder;
+  text-shadow: 1px 3px 5px black; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.weather-icon img {
+  padding-top: 1px;
+  width: 80px;
+  height: 80px;
+}
+
+.temperature-value p {
+  font-size: var(--fss);
+  font-weight: bolder;
+  margin-left: 15px;
+  padding-top: 1px;
+  text-shadow: 1px 3px 5px black;
+}
+
+.temperature-description p {
+  text-transform: capitalize;
+  font-size: var(--fss); 
+  font-weight: 600; 
+  margin-left: -20px; 
+  padding: 30px;
+  text-shadow: 1px 3px 5px black;
+}
+
+.quote-description p {
+    font-style: italic;
+    font-size: 20px;  
+    margin-left: 15px;
+    text-align: center;
+    text-shadow: 1px 3px 5px black; 
+}  
