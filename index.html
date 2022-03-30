@@ -2,43 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="A Clean and Simple Startpage." />
         <title>&nbsp;&nbsp;Nova aba</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script defer="defer" src="js/quote.js"></script>
-        <script defer="defer" src="js/wallpaper.js"></script>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script rel="preload" src="js/wallpaper.js"></script>
+        <link defer="defer" rel="stylesheet dns-prefetch" href="css/style.css" />
     </head>
     <body>
         <div class="container">
-            <div class="hour">
-                <div id="greetings"></div>
-                <div class="secon__weather">
+            <div id="greetings"></div>
+                <div class="weather">                    
                     <div class="weather-icon">
-                        <img src="icons/unknown.png" />
+                        <img alt="Weather Icon" src="icons/unknown.png" />
                     </div>
+
                     <div class="temperature-value">   
                         <p>- °</p>
                     </div>
+
                     <div class="temperature-description">
                         <p></p>
                     </div>
                 </div> 
                 <div class='quote-description'>
                     <p id='random_quote'></p>
-                </div>              
-            </div>               
-        </div>    
+                </div>                 
         </div>
 
         <script defer="defer" src="js/weather.js"></script>
-        <script defer="defer" src="js/greeting.js"></script>
-
-        <script>
-            feather.replace();
-        </script>
-        
+        <script defer="defer" rel="preconnect" src="js/greeting.js"></script>        
     </body>
 </html>

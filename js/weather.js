@@ -13,7 +13,7 @@ var tempUnit = 'C';
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = 'e1b9964';
+const key = 'e1b99';
 
 // Set Position function
 setPosition();
@@ -51,7 +51,7 @@ function getWeather(latitude, longitude) {
 
 // Display Weather info
 function displayWeather() {
-    iconElement.innerHTML = `<img src="icons/White/${weather.iconId}.png"/>`;
+    iconElement.innerHTML = `<img alt="Weather Icon" src="icons/White/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}° -`;
     descElement.innerHTML = weather.description;
 }

@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
-  --fsg: 150px;
-  --fsm: 85px;
-  --fss: 30px;
-  --fses: 58px;
-  --fg: #d8dee9;
-  --qbg: #2c323d;
-  --accent: #1a318b;
+  --fsg: rgba(31, 34, 41, 0.664); /* Change color of glass background */
+  --fss: 30px;                      /* Change size font of Temperature and Condition */
+  --fses: 58px;                     /* Change size font of Greetings */
+  --fsq: 20px;                      /* Change size font of Quotes */
+  --fg: #d8dee9;                  /* Change color of letters */
 }
 
 * {
@@ -22,12 +20,14 @@
 
 html {
     height: 100%;
+    width: 100%;
     background-position-x: center;
     background-size: cover;
+    display: block;  
 }  
 
 body {
-    background: rgba(31, 34, 41, 0.664);
+    background: var(--fsg);
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,15 +44,9 @@ body {
   padding: 20px; 
 }
 
-.secon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.secon__weather {
+.weather {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
@@ -61,8 +55,7 @@ body {
   font-size: var(--fses);
   font-weight: bolder;
   text-shadow: 1px 3px 5px black; 
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center; 
 }
@@ -71,6 +64,8 @@ body {
   padding-top: 1px;
   width: 80px;
   height: 80px;
+  align-items: center;
+  justify-content: center;
 }
 
 .temperature-value p {
@@ -79,6 +74,9 @@ body {
   margin-left: 15px;
   padding-top: 1px;
   text-shadow: 1px 3px 5px black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .temperature-description p {
@@ -88,12 +86,17 @@ body {
   margin-left: -20px; 
   padding: 30px;
   text-shadow: 1px 3px 5px black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .quote-description p {
     font-style: italic;
-    font-size: 20px;  
+    font-size: var(--fsq);  
     margin-left: 15px;
     text-align: center;
-    text-shadow: 1px 3px 5px black; 
+    text-shadow: 1px 3px 5px black;
+    align-items: center;
+    justify-content: center; 
 }  
