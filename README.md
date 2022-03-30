@@ -12,28 +12,32 @@
 
 ## Disclaimer
 
-**I didn't develop the elements of this project**, I just put the pieces of the puzzle together to make it work, based on what I would like to have. The changes made were made empirically. You will probably have better ways of doing what I I did.
+**I didn't develop the elements of this project**, I just put the pieces of the puzzle together to make it work, based on what I would like to have. The changes made were made empirically. You will probably have better ways of doing what I did.
 ## Based on:
 
-- [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
-- [forismatic](http://forismatic.com/en/api/) API from  [code example](https://codepen.io/catapixel/pen/LpVEgy).
-- [Reddit API](https://www.reddit.com/dev/api/).
+- [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento) before refactor.
+- [forismatic](http://forismatic.com/en/api/) API from [code example](https://codepen.io/catapixel/pen/LpVEgy).
+- [Reddit API](https://www.reddit.com/dev/api/) for [random wallpaper](https://stackoverflow.com/questions/8191105/how-to-extract-url-data-from-reddit-api-using-json?rq=1).
 
 ## Features:
 
 - **Greetings** = Are easy to change to your name.
-- **Quotes** = Expressions to stimulate your thought and inspire your day.
+- **Quotes** = Expressions to stimulate your thought or inspire your day.
 - **Weather Icons** = Provided by [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
 - **Weather** = Provided by OpenWeatherMap.
 - **Random Wallpapers** = Provided by Reddit API.
 ## Customization
 
-The files needed for editing below are contained in the `js` folder.
+The files needed for editing below are contained in the `js` and `css` folder.
+
+### Colors and font size:
+
+You can customize the font size and color via lines **4** to **8** of the `style.css` file.
 ### Weather Info:
 
-To configure Weather, you will need an API Key at: `https://openweathermap.org/`. Once you have your key, you will need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you will need to configure it in the `weather.js` on lines **16**, **24** and **25**.
+To configure Weather you will need an API Key at: `https://openweathermap.org/`. Once you have your key, you will need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you will need to configure it in the `weather.js` file on lines **16**, **24** and **25** respectively.
 
-> If you don't like to have your API Key public, you can make the repo into a private one. You can still use the Github Pages service.
+> If you don't like to have your API Key public (and Github discourages this publication due to security issues), you can make the repo into a private one. You can still use the Github Pages service or Netlify.
 
 ### Weather Icons:
 
@@ -41,16 +45,16 @@ To configure Weather, you will need an API Key at: `https://openweathermap.org/`
 
 You set the icon theme changing the line **54** on `weather.js` file:
 
--   For example if you want the White icon theme, change the `White` to `Nord`
+- For example if you want the White icon theme, change the `White` to `Nord`
 
 ### Greetings:
 
-In line **5** until **9** of the `greeting.js` translate messages for your language. You can put your name and change the greetings.
+In line **5** until **9** of the `greeting.js` You can put your name and change the greetings translations messages for your language.
 
 ```js
 var name = 'Ciro';
 var lateTxt = 'GO TO SLEEP!!!';
-var morningTxt = 'Good morning! ';
+var morningTxt = 'Good morning!';
 var afterTxt = 'Good afternoon!';
 var evenTxt = 'Good evening!';
 ```
@@ -58,15 +62,11 @@ var evenTxt = 'Good evening!';
 
 #### As Home Page:
 1. Fork this repo.
-2. Enable the Github Pages service `Settings > GitHub Pages > Source [master branch] > Save`.
-3. Set it as Home Page:
-    - Click the menu button. and select Options. Preferences.
-    - Click the Home panel.
-    - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`.
-    - Or `git clone` and use locally `index.html` file.
+2. Enable the Github Pages service `Settings` » `Pages` » `Source branch [main branch]` » `Save`.
+3. Or publish it to [Netlify](https://www.netlify.com/).    
 
 #### As New Tab:
-1. You can use different Add-ons/Extensions for it
+1. You can use different Extensions:
   - If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search).
   - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia).
 

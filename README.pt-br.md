@@ -1,75 +1,74 @@
 
 <div align="center">
-    <h1>A Clean and Simple Startpage</h1>
+    <h1>Clean e Simples Startpage</h1>
 </div>
 
-![Licese](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)
+![Licença](https://img.shields.io/badge/Licença-GPLv3-blue.svg?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![Last Commit](https://img.shields.io/github/last-commit/ciro-mota/Personal-Startpage?style=for-the-badge)
+![Último Commit](https://img.shields.io/github/last-commit/ciro-mota/Personal-Startpage?style=for-the-badge)
 
 ## Disclaimer
 
-**I didn't create anything in this project**, I just put the puzzle pieces together based on what I would like to have. The changes here in this project were made empirically based on my usage. They probably have better ways of doing what I did, but it escapes my knowledge that I have how to do it.
-## Based on:
+**Eu não desenvolvi os elementos deste projeto**, apenas juntei as peças do quebra-cabeças para fazer ele funcionar, com base naquilo que eu gostaria de ter. As mudanças realizadas foram feitas de forma empírica. Vocês provavelmente terão maneiras melhores de fazer o que eu fiz.
+## Baseado em:
 
 - [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
-- [forismatic](http://forismatic.com/en/api/) API from  [code example](https://codepen.io/catapixel/pen/LpVEgy).
-- [Reddit API](https://www.reddit.com/dev/api/).
+- [forismatic](http://forismatic.com/en/api/) API [código de exemplo](https://codepen.io/catapixel/pen/LpVEgy).
+- [Reddit API](https://www.reddit.com/dev/api/) com [wallpaper aleatórios](https://stackoverflow.com/questions/8191105/how-to-extract-url-data-from-reddit-api-using-json?rq=1).
 
-## Features:
+## Recursos:
 
-- **Greetings** = Are easy to change to your name.
-- **Quotes** = Expressions to stimulate your thought and inspire your day.
-- **Weather Icons** = Provided by [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
-- **Weather** = Provided by OpenWeatherMap.
-- **Random Wallpapers** = Provided by Reddit API.
-## Customization
+- **Saudações** = Fácil de mudar para o seu nome.
+- **Citações** = Citações para estimular seu pensamento ou inspirar seu dia.
+- **Icones de clima** = Criados por [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
+- **Clima** = Provido por OpenWeatherMap.
+- **Wallpapers aleatórios** = Provido por Reddit API.
+## Customização
 
-The files needed for editing below are contained in the `js` folder.
-### Weather Info:
+Os arquivos necessários para edição abaixo estão contidos na pasta `js`.
+### Cores e tamanho da letra:
 
-To configure Weather, you will need an API Key at: `https://openweathermap.org/`. Once you have your key, you will need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you will need to configure it in the `weather.js` on lines **16**, **24** and **25**.
+Você pode personalizar o tamanho das letras e cor através das linhas **4** a **8** do arquivo `style.css`.
+### Clima:
 
-> If you don't like to have your API Key public, you can make the repo into a private one. You can still use the Github Pages service.
+Para configurar o Clima você precisará de uma API Key em: `https://openweathermap.org/`. Depois de ter sua chave, você precisará definir sua latitude e longitude, você pode usar: `https://www.latlong.net/` para obtê-los. Assim que tiver os dados você precisará configurá-los no arquivo `weather.js` nas linhas **16**, **24** e **25** respectivamente.
 
-### Weather Icons:
+> Se você não quiser que sua chave de API seja pública (e o Github desencoraja essa publicação devido a questões de segurança), poderá tornar o repositório privado. Você ainda poderá usar o serviço Github Pages ou Netlify.
+
+### Icones de clima:
 
 ![](assets/previewico.png)
 
-You set the icon theme changing the line **54** on `weather.js` file:
+Você define o tema do ícone alterando a linha **54** no arquivo `weather.js`:
 
--   For example if you want the White icon theme, change the `White` to `Nord`
+- Por exemplo, se você quiser o tema do ícone White, altere o `White` para `Nord`
 
-### Greetings:
+### Saudações:
 
-In line **5** until **9** of the `greeting.js` translate messages for your language. You can put your name and change the greetings.
+Nas linhas **5** até **9** do arquivo `greeting.js` você deverá colocar seu nome e traduzir as mensagens para seu idioma.
 
 ```js
 var name = 'Ciro';
 var lateTxt = 'GO TO SLEEP!!!';
-var morningTxt = 'Good morning! ';
+var morningTxt = 'Good morning!';
 var afterTxt = 'Good afternoon!';
 var evenTxt = 'Good evening!';
 ```
-## Usage
+## Uso
 
-#### As Home Page:
-1. Fork this repo.
-2. Enable the Github Pages service `Settings > GitHub Pages > Source [master branch] > Save`.
-3. Set it as Home Page:
-    - Click the menu button. and select Options. Preferences.
-    - Click the Home panel.
-    - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`.
-    - Or `git clone` and use locally `index.html` file.
+#### Como Home Page:
+1. Fork este repo.
+2. Ative o Github Pages em `Settings` » `Pages` » `Source [main branch]` » `Save`.
+3. Ou publique-o no [Netlify](https://www.netlify.com/).
 
-#### As New Tab:
-1. You can use different Add-ons/Extensions for it
-  - If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search).
-  - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia).
+#### Como nova aba:
+1. Você pode usar extensões diferentes
+  - No Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search).
+  - No Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia).
 
-## Final appearance 
+## Aparência final: 
 
 ![](assets/preview.png)
 
