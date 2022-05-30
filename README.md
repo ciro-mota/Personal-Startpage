@@ -74,5 +74,8 @@ var evenTxt = 'Good evening!';
 
 ![](assets/preview.png)
 
+## Sponsoring
 
+If you like this work, give me it a star on GitHub, and consider supporting it:
 
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
