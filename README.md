@@ -1,9 +1,12 @@
+</p>
 
-<div align="center">
-    <h1>A Clean and Simple Startpage</h1>
-</div>
+<table align="right">
+ <tr><td><a href="https://github.com/ciro-mota/Personal-Startpage/blob/main/README.md">:us: English</a></td></tr>
+ <tr><td><a href="https://github.com/ciro-mota/Personal-Startpage/blob/main/README.pt-br.md">:brazil: Português</a></td></tr>
+</table>
 
-[![Versão-Português_Brasil](https://img.shields.io/badge/Versão-Português_Brasil-%2393CE0A?style=for-the-badge)](/README.pt-br.md)
+<h2>A Clean and Simple Startpage</h2>
+
 ![Licese](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
