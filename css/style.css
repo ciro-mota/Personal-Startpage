@@ -21,9 +21,11 @@
 html {
     height: 100%;
     width: 100%;
-    background-position-x: center;
+    background-position: center center;
     background-size: cover;
-    display: block;  
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: block;
 }  
 
 body {
@@ -31,7 +33,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .container {
@@ -41,7 +43,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .weather {
@@ -57,7 +59,7 @@ body {
   text-shadow: 1px 3px 5px black; 
   text-align: center;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .weather-icon img {
@@ -81,9 +83,9 @@ body {
 
 .temperature-description p {
   text-transform: capitalize;
-  font-size: var(--fss); 
-  font-weight: 600; 
-  margin-left: -20px; 
+  font-size: var(--fss);
+  font-weight: 600;
+  margin-left: -20px;
   padding: 30px;
   text-shadow: 1px 3px 5px black;
   align-items: center;
@@ -93,10 +95,10 @@ body {
 
 .quote-description p {
     font-style: italic;
-    font-size: var(--fsq);  
+    font-size: var(--fsq);
     margin-left: 15px;
     text-align: center;
     text-shadow: 1px 3px 5px black;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }  
