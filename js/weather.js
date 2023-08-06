@@ -1,3 +1,9 @@
+// Edit to define your local language. Default is Portuguese-Brazil.
+var youLang = "pt_br"
+
+// Edit do define the icon color of weather. Available: Dark, Nord, OneDark and White. Default is White.
+var iconColor = "White"
+
 const iconElement = document.querySelector('.weather-icon');
 const tempElement = document.querySelector('.temperature-value p');
 const descElement = document.querySelector('.temperature-description p');
@@ -29,7 +35,7 @@ function setPosition(position) {
 
 // Get the Weather data
 function getWeather(latitude, longitude) {
-    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&lang=pt_br`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&lang=${youLang}`;
 
     console.log(api);
 
@@ -51,7 +57,7 @@ function getWeather(latitude, longitude) {
 
 // Display Weather info
 function displayWeather() {
-    iconElement.innerHTML = `<img alt="Weather Icon" src="icons/White/${weather.iconId}.png"/>`;
+    iconElement.innerHTML = `<img alt="Weather Icon" src="icons/${iconColor}/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}° -`;
     descElement.innerHTML = weather.description;
 }
