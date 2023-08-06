@@ -103,3 +103,16 @@ body {
     text-align: center;
     text-shadow: 1px 3px 5px black;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .temperature-value p {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .temperature-value p {
+    margin-left: 19px;
+  }
+}
