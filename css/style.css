@@ -19,21 +19,21 @@
 }
 
 html {
-    height: 100%;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    display: block;
-}  
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: block;
+}
 
 body {
-    background: var(--fsg);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: var(--fsg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -46,59 +46,60 @@ body {
   padding: 20px;
 }
 
-.weather {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
 #greetings {
+  align-items: center;
   font-size: var(--fses);
   font-weight: bolder;
+  justify-content: center;
   text-shadow: 1px 3px 5px black; 
   text-align: center;
+}
+
+.weather {
   align-items: center;
+  display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .weather-icon img {
+  align-items: center;
+  justify-content: center;
   padding-top: 1px;
   width: 80px;
   height: 80px;
-  align-items: center;
-  justify-content: center;
 }
 
 .temperature-value p {
+  align-items: center;
   font-size: var(--fss);
   font-weight: bolder;
-  margin-left: 15px;
+  justify-content: center;
+  margin-left: 35px;
   padding-top: 1px;
   text-shadow: 1px 3px 5px black;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
 .temperature-description p {
-  text-transform: capitalize;
+  align-items: center;
   font-size: var(--fss);
   font-weight: 600;
+  justify-content: center;
   margin-left: -20px;
   padding: 30px;
+  text-transform: capitalize;
   text-shadow: 1px 3px 5px black;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
 .quote-description p {
+    align-items: center;
     font-style: italic;
     font-size: var(--fsq);
+    justify-content: center;
     margin-left: 15px;
+    padding: 10px;
     text-align: center;
     text-shadow: 1px 3px 5px black;
-    align-items: center;
-    justify-content: center;
-}  
+}
