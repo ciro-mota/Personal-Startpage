@@ -89,7 +89,7 @@ Você pode executar esta página inicial simples em um Docker Container com sua 
 
 #### docker-compose
 1. Clone este repo.
-2. `# docker-compose -d up`
+2. `docker-compose -d up`
 3. A página estará disponível na porta 8080: `localhost:8080`
 
 ## Aparência final: 
