@@ -1,0 +1,10 @@
+version: "3.9"
+
+services: 
+  bento:
+    image: ciromota/my-startpage:latest
+    build: .
+    volumes:
+      - .:/usr/share/nginx/html/
+    ports:
+      - 8080:80
