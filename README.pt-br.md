@@ -8,11 +8,13 @@
 
 <h2>Clean e Simples Startpage</h2>
 
-![Licença](https://img.shields.io/badge/Licença-GPLv3-blue.svg?style=for-the-badge)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![Último Commit](https://img.shields.io/github/last-commit/ciro-mota/Personal-Startpage?style=for-the-badge)
+<p align="center">
+    <img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge">
+    <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+    <img alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+    <img alt="JS" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+    <img alt="Last Commit" src="https://img.shields.io/github/last-commit/ciro-mota/Personal-Startpage?style=for-the-badge">
+</p>
 
 ## ⚠️ Disclaimer
 
