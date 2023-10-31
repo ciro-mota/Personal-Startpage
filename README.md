@@ -1,10 +1,3 @@
-</p>
-
-<table align="right">
- <tr><td><a href="https://github.com/ciro-mota/Personal-Startpage/blob/main/README.md">:us: English</a></td></tr>
- <tr><td><a href="https://github.com/ciro-mota/Personal-Startpage/blob/main/README.pt-br.md">:brazil: Português</a></td></tr>
-</table>
-
 <h2>A Clean and Simple Startpage</h2>
 
 <p align="center">
@@ -18,11 +11,7 @@
 ## ⚠️ Disclaimer
 
 **I didn't develop the elements of this project**, I just put the pieces of the puzzle together to make it work, based on what I would like to have. The changes made were made empirically. You will probably have better ways of doing what I did.
-## 🎁 Sponsoring
 
-If you like this work, give me it a star on GitHub, and consider supporting it:
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
 ## ⭐ Based on:
 
 - [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento) before refactor.
@@ -103,3 +92,9 @@ You can run this Simple Startpage in a Docker Container buildind your own imagem
 ## 💻 Final appearance 
 
 ![](assets/preview.png)
+
+## 🎁 Sponsoring
+
+If you like this work, give me it a star on GitHub, and consider supporting it:
+
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
