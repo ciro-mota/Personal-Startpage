@@ -81,7 +81,7 @@ You can run this Simple Startpage in a Docker Container buildind your own imagem
 #### Docker Container Run
 1. Clone this repo.
 2. `docker buildx build -t startpage .`
-3. `docker run -itd -p 8080:80 startpage`
+3. `docker run -itd -p 8080:8080 startpage`
 4. The page will be available at the port 8080: `localhost:8080`
 
 #### docker-compose
