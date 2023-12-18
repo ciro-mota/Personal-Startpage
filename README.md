@@ -14,9 +14,12 @@
 
 ## ⭐ Based on:
 
-- [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento) before refactor.
+- [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento)
 - [forismatic](http://forismatic.com/en/api/) API from [code example](https://codepen.io/catapixel/pen/LpVEgy).
 - [Reddit API](https://www.reddit.com/dev/api/) for [random wallpaper](https://stackoverflow.com/questions/8191105/how-to-extract-url-data-from-reddit-api-using-json?rq=1).
+
+> [!WARNING]\
+> You must check the licenses of the respective components if you wish to use any of them commercially.
 
 ## ✨ Features:
 
