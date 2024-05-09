@@ -58,7 +58,7 @@ See languages supported in: https://openweathermap.org/current#multi
 
 ### ☁️ Weather Icons:
 
-![](assets/previewico.webp)
+![](assets/previewico.png)
 
 - For example if you want the White icon theme, change the `White` to `Nord`.
 
@@ -109,7 +109,7 @@ You can run this Simple Startpage in a Docker Container buildind your own imagem
 
 ## 💻 Final appearance
 
-![](assets/preview.png)
+![](assets/preview.webp)
 
 ## 🎁 Sponsoring
 
