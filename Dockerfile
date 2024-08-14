@@ -1,2 +1,2 @@
-FROM nginxinc/nginx-unprivileged:alpine
+FROM nginxinc/nginx-unprivileged:alpine3.19-slim
 COPY . /usr/share/nginx/html
