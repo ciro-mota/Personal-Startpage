@@ -9,7 +9,7 @@
 
 ## ⚠️ Disclaimer
 
-**I didn't develop the elements of this project**, I just put the pieces of the puzzle together to make it work, based on what I would like to have. The changes made were made empirically.
+**I didn't develop the elements of this project**, I just put the pieces of the puzzle together to make it work based on what I would like to have.
 
 ## ⭐ Based on:
 
@@ -25,8 +25,9 @@
 - **Greetings** = Are easy to change to your name.
 - **Quotes** = Expressions to stimulate your thought or inspire your day.
 - **Weather Icons** = Provided by [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
-- **Weather** = Provided by OpenWeatherMap.
-- **Random Wallpapers** = Provided by Reddit API.
+- **Weather** = Provided by [OpenWeatherMap](https://openweathermap.org/).
+- **Random Wallpapers** = Provided by [Reddit API](https://www.reddit.com/dev/api/).
+- **Responsive** = Will adapt to most devices.
 
 ## 🎨 Customization
 
@@ -41,13 +42,13 @@ The main colors can be customized through the file `style.css`.
 
 ### ⛈️ Weather Info:
 
-To configure weather you will need an API Key at: `https://openweathermap.org/`. Once you have your key, you will need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. 
+To configure weather you will need an API Key at: `https://openweathermap.org/`. Once you have your key you will need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them.
 
 > [!TIP]\
 >Once you have the data you will need to configure it in the `weather.js` file on lines **22**, **30** and **31** respectively.
 
 > [!IMPORTANT]
-> If you don't like to have your API Key public (and Github discourages this publication due to security issues), you can make the repo into a private one. You can still use the Github Pages service or Netlify.
+> If you don't like to have your API Key public (me and Github strongly discourage this publication due to security issues), you can make the repo into a private one. You can still use the Github Pages service or Netlify.
 
 ### 🌎 Weather Language:
 
