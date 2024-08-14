@@ -90,7 +90,7 @@ var evenTxt = 'Good evening!';
 
 ### ➕ As New Tab:
 1. You can use different Extensions:
-  - If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search).
+  - If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/).
   - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia).
 
 ### 🐳 In a Docker Container
