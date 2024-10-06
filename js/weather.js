@@ -1,5 +1,6 @@
-// Edit to define your local language. Default is Portuguese-Brazil.
-var youLang = "pt_br"
+// Edit to define your local language. Default is English.
+// Available languages: openweathermap.org/api/one-call-api#multi
+var youLang = "en"
 
 // Edit do define the icon color of weather. Available: Dark, Nord, OneDark and White. Default is White.
 var iconColor = "White"
