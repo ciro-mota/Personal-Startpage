@@ -1,8 +1,7 @@
 // Edit to define your local language. Default is English.
-// Available languages: openweathermap.org/api/one-call-api#multi
 var youLang = "en"
 
-// Edit do define the icon color of weather. Available: Dark, Nord, OneDark and White. Default is White.
+// Edit to define the icon color of weather. Available: Dark, Nord, OneDark and White. Default is White.
 var iconColor = "White"
 
 const iconElement = document.querySelector('.weather-icon');
@@ -18,26 +17,36 @@ weather.temperature = {
 // Change to 'F' for Fahrenheit
 var tempUnit = 'C';
 
-const KELVIN = 273.15;
-// Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = 'e1b99';
+// Use your own key for the Pirate Weather API
+const key = 'YOUR_PIRATE_WEATHER_API_KEY';
+
+// Mapping of Pirate Weather icon names to local icon filenames
+const iconMap = {
+    "clear-day": "01d",
+    "clear-night": "01n",
+    "rain": "09d",
+    "snow": "13d",
+    "sleet": "13d",
+    "wind": "50d",
+    "fog": "50d",
+    "cloudy": "03d",
+    "partly-cloudy-day": "02d",
+    "partly-cloudy-night": "02n"
+};
 
 // Set Position function
 setPosition();
 
 function setPosition(position) {
-    // Here you can change your position
-    // You can use https://www.latlong.net/ to get it! (I use San Francisco as an example)
-    let latitude = -12.914322;
-    let longitude = -38.331219;
+    let latitude = -12.914322; // Insert your latitude here
+    let longitude = -38.331219; // Insert your longitude here
 
     getWeather(latitude, longitude);
 }
 
 // Get the Weather data
 function getWeather(latitude, longitude) {
-    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&lang=${youLang}`;
-
+    let api = `https://api.pirateweather.net/forecast/${key}/${latitude},${longitude}?units=si&lang=${youLang}`;
     console.log(api);
 
     fetch(api)
@@ -46,10 +55,13 @@ function getWeather(latitude, longitude) {
             return data;
         })
         .then(function (data) {
-            let celsius = Math.floor(data.main.temp - KELVIN);
-            weather.temperature.value = (tempUnit == 'C') ? celsius : (celsius * 9/5) + 32;
-            weather.description = data.weather[0].description;
-            weather.iconId = data.weather[0].icon;
+            let celsius = Math.floor(data.currently.temperature);
+            weather.temperature.value = (tempUnit == 'C') ? celsius : Math.floor((celsius * 9/5) + 32);
+            weather.description = data.currently.summary || 'No description available';
+            
+            let iconKey = data.currently.icon || 'clear-day';
+            // Map to your local icon naming convention
+            weather.iconId = iconMap[iconKey] || '01d';
         })
         .then(function () {
             displayWeather();
