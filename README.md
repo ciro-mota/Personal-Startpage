@@ -55,7 +55,7 @@ To configure weather you will need an API Key at: `https://pirate-weather.apiabl
 
 ### 🌎 Weather Language:
 
-See languages supported in: https://openweathermap.org/current#multi
+See languages supported in: https://docs.pirateweather.net/en/latest/API/
 
 > [!TIP]\
 >You can set the language of weather conditions changing the variable in the line **2** on `weather.js` file.
