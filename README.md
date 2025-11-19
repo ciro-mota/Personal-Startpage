@@ -114,9 +114,3 @@ You can run this Simple Startpage in a Docker Container buildind your own imagem
 ## 💻 Final appearance
 
 ![](assets/preview.webp)
-
-## 🎁 Sponsoring
-
-If you like this work, give me it a star on GitHub, and consider supporting it:
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
