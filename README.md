@@ -14,10 +14,10 @@
 ## ⭐ Based on:
 
 - [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento)
-- [forismatic](http://forismatic.com/en/api/) API from [code example](https://codepen.io/catapixel/pen/LpVEgy).
-- [Reddit API](https://www.reddit.com/dev/api/) for [random wallpaper](https://stackoverflow.com/questions/8191105/how-to-extract-url-data-from-reddit-api-using-json?rq=1).
+- [ZenQuotes API](https://docs.zenquotes.io/zenquotes-documentation/).
+- [Bing Wallpapers](https://www.bing.com/hp/api/v1/imagegallery).
 
-> [!WARNING]\
+> [!WARNING]
 > You must check the licenses of the respective components if you wish to use any of them commercially.
 
 ## ✨ Features:
@@ -25,9 +25,10 @@
 - **Greetings** = Are easy to change to your name.
 - **Quotes** = Expressions to stimulate your thought or inspire your day.
 - **Weather Icons** = Provided by [Bento of MiguelRAvila](https://github.com/MiguelRAvila/Bento).
-- **Weather** = Provided by [Pirate Weather](https://pirate-weather.apiable.io/).
-- **Random Wallpapers** = Provided by [Reddit API](https://www.reddit.com/dev/api/).
+- **Weather** = Provided by [ Open-Meteo](https://open-meteo.com/en/docs).
+- **Random Wallpapers** = Provided by [TimothyYe API](https://github.com/TimothyYe/bing-wallpaper).
 - **Responsive** = Will adapt to most devices.
+- **No API key is required.**
 
 ## 🎨 Customization
 
@@ -37,28 +38,14 @@ The files needed for editing below are contained in the `js` and `css` folder.
 
 The main colors can be customized through the file `style.css`.
 
-> [!TIP]\
+> [!TIP]
 >You can customize the font size and color via lines **4** to **8** of the file.
 
 ### ⛈️ Weather Info:
 
-> [!NOTE]\
->Since OpenWeatherMap closed its API 2.5 and began requiring a credit card to use the new API 3.0, it has ceased to be an accessible option for everyone. Therefore, the code was modified to support Pirate Weather, which has a free API and is an open-source service.
+You will need to set your `latitude` and `longitude`, you can use: `https://www.latlong.net/` to get them.
 
-To configure weather you will need an API Key at: `https://pirate-weather.apiable.io/`. Once you have your key you will need to set your `latitude` and `longitude`, you can use: `https://www.latlong.net/` to get them.
-
-> [!TIP]\
->Once you have the data you will need to configure it in the `weather.js` file on lines **2**, **21**, **41** and **42** respectively.
-
-> [!IMPORTANT]
-> If you don't like to have your API Key public (me and Github strongly discourage this publication due to security issues), you can make the repo into a private one. You can still use the Github Pages service or Netlify.
-
-### 🌎 Weather Language:
-
-See languages supported in: https://docs.pirateweather.net/en/latest/API/
-
-> [!TIP]\
->You can set the language of weather conditions changing the variable in the line **2** on `weather.js` file.
+Once you have the data you will need to configure it in the `weather.js` file on lines **2** for your language, **67** and **68** respectively.
 
 ### ☁️ Weather Icons:
 
@@ -66,7 +53,7 @@ See languages supported in: https://docs.pirateweather.net/en/latest/API/
 
 - For example if you want the White icon theme, change the `White` to `Nord`.
 
-> [!TIP]\
+> [!TIP]
 >You can set the icon theme changing the variable in the line **5** on `weather.js` file:
 
 ### 👋 Greetings:
@@ -81,8 +68,12 @@ var afterTxt = 'Good afternoon!';
 var evenTxt = 'Good evening!';
 ```
 
-> [!TIP]\
+> [!TIP]
 >You should put your name and change the greetings translations messages for your language.
+
+### 🌉 Wallpapers
+
+Change line **1** to choose between random images or the Bing image of the day.
 
 ## 🚀 Usage
 
