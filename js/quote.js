@@ -1,16 +1,13 @@
 function randomQuote() {
     $.ajax({
-        url: "https://api.forismatic.com/api/1.0/?",
-        dataType: "jsonp",
-        data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
+        url: "https://corsproxy.io/?" + encodeURIComponent("https://zenquotes.io/api/random?t=" + Date.now()),
+        dataType: "json",
         success: function( response ) {
-          $("#random_quote").html("<p id='random_quote' class='lead text-center'>" +
-            response.quoteText + "<br/>&dash; " + response.quoteAuthor + " &dash;</p>");
+            $("#random_quote").html("<p id='random_quote' class='lead text-center'>" +
+                response[0].q + "<br/>&dash; " + response[0].a + " &dash;</p>");
         }
     });
-  }
-  
-  $(function() {
+}
+$(function() {
     randomQuote();
-  });
-
+});
